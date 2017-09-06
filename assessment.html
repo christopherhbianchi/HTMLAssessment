@@ -2,9 +2,127 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Football Sheet</title>
   </head>
   <body>
+    <h1>TEXT</h1>
+      <p style="font-family: Lorem"><strong>Lorem</strong> some text.<br></p>
+      <p style ="font-family: Integer">
+        <blockquote>
+          <em><strong>Integer</strong> some text.</em><br>
+        </blockquote>
+      </p>
+      <p style="vestibulum"><strong>Vestibulum</strong> some text.</p>
+
+
+    <h1>TABLE</h1>
+    <br>
+
+      <table>
+        <tr>
+          <td colspan="5" style="text-align:center">Scores by quarter</td>
+        </tr>
+        <tr>
+          <th rowspan="2" colspan="2" style="text-align:left">Team Name</th>
+          <th colspan="2"><strong>First Half</strong></th>
+          <th colspan="2"><strong>Second Half</strong></th>
+        </tr>
+
+          <th style="text-align:center"><strong>Q1</strong></th>
+          <th style="text-align:center"><strong>Q2</strong></th>
+          <th style="text-align:center"><strong>Q3</strong></th>
+          <th style="text-align:center"><strong>Q4</strong></th>
+          <th style="text-align:center"><strong>Final</strong></th>
+        </tr>
+        <tr>
+          <td>New England</td>
+          <td style="text-align:right">7</td>
+          <td style="text-align:right">13</td>
+          <td style="text-align:right">21</td>
+          <td style="text-align:right">14</td>
+          <td style="text-align:right">55</td>
+        </tr>
+        <tr>
+          <td>Seattle</td>
+          <td>7</td>
+          <td>14</td>
+          <td>3</td>
+          <td>3</td>
+          <td>27</td>
+        </tr>
+        <tr style="text-align:center">
+            <th>Total</th>
+            <th>14</th>
+            <th>27</th>
+            <th>24</th>
+            <th>17</th>
+            <th>82</th>
+        </tr>
+      </table>
+
+    <h1><strong>LIST</h1>
+      <ul>
+        <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/New_England_Patriots_logo_old.svg/1024px-New_England_Patriots_logo_old.svg.png" style="width:100px; height:100px"/>
+        <a href="https://en.wikipedia.org/wiki/New_England_Patriots"><br>New England Patriots</a>
+          <ul>
+            Coach: Bill Belichick
+          </ul>
+          <ul>
+            QB:
+              <ol>
+                <li>Tom Brady</li>
+                <li>Jimmy Garropolo</li>
+              </ol>
+          </ul>
+        </li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Seattle_Seahawks_logo.svg/1280px-Seattle_Seahawks_logo.svg.png" style="width:150px; height:100px"/>
+          <a href="https://en.wikipedia.org/wiki/Seattle_Seahawks"><br>Seattle Seahawks</a>
+            <ul>
+              Coach: Pete Carroll
+            </ul>
+            <ul>
+              QB:
+                <ol>
+                  <li>Russell Wilson</li>
+                  <li>Marshawn Lynch</li>
+                </ol>
+            </ul>
+        </li>
+      </ul>
+
+      <h1><strong>FORM</strong>
+      <br>
+        <form action="/action_page.php">
+          <fieldset style="font-size:12px">
+            <legend>Personal Information:</legend>
+            First Name:<input type="text" name ="firstname" value="Christopher"> Last Name:<input type="text" name ="lastname" value="Bianchi">
+            <br>
+            Favorite Sport:<br>
+              <select name="Please select one">
+                <option value="Basketball">Basketball</option>
+                <option value="Football">Football</option>
+                <option value="Soccer">Soccer</option>
+                <option value="Baseball">Baseball</option>
+            I have:
+              <input type="checkbox" name ="Attended" value= "Attended" checked>Attended
+              <input type="checkbox" name ="Played" value= "Played" checked>Played
+              <input type="checkbox" name ="Coached" value= "Coached" checked>Coached
+              <input type="checkbox" name ="Bet On" value= "Bet On">Bet On
+            <br>
+            this sport.
+            <br>
+            For this sport I prefer the:
+              <input type ="radio" name ="Amateur" value= "Amateur" checked>Amateur
+              <input type ="radio" name ="Colelge" value= "College">College
+              <input type ="radio" name ="Professional" value= "Professional">Professional
+            <br>
+            <input type="submit" value ="Submit Query">
+          </fieldset>
+        </form>
+
+
+
+
 
   </body>
 </html>
